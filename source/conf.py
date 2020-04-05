@@ -4,12 +4,12 @@ import mock
 import os
 import sys
  
-MOCK_MODULES = ['numpy', 'np', 'tensorflow', 'tf','collections', 'deque', 
-               'keras', 'keras.layers', 'keras.models,','Model', 'Input', 
-               'Dense', 'Model','Sequential','keras.optimizers','Adam',
-               'keras.utils','to_categorical','layers','load_model']
-for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = mock.Mock()
+# MOCK_MODULES = ['numpy', 'np', 'tensorflow', 'tf','collections', 'deque', 
+#                'keras', 'keras.layers', 'keras.models,','Model', 'Input', 
+#                'Dense', 'Model','Sequential','keras.optimizers','Adam',
+#                'keras.utils','to_categorical','layers','load_model']
+# for mod_name in MOCK_MODULES:
+#     sys.modules[mod_name] = mock.Mock()
 
 
 sys.path.insert(0, os.path.abspath('.'))
