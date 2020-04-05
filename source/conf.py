@@ -17,9 +17,9 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 
 # -- Project information -----------------------------------------------------
 
-project = 'Proban2'
-copyright = 'ajajajaj'
-author = 'Eduardin'
+project = 'Designing Experiments with Neural Networks'
+copyright = 'None so far'
+author = 'Edu'
 
 # The short X.Y version
 version = ''
@@ -95,8 +95,8 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-# html_sidebars = {}
+html_sidebars = {}
 # import stanford_theme
 # html_theme = "stanford_theme"
 # html_theme_path = [stanford_theme.get_html_theme_path()]
-# autoclass_content = "both"
+autoclass_content = "both"
