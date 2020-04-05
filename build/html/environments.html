@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>environments module &mdash; Proban2 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Proban2 1 documentation" href="index.html"/>
+        <link rel="prev" title="rlagents module" href="rlagents.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Proban2
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">INtroduccion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#list">List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analyzers.html">analyzers module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rlagents.html">rlagents module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">environments module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Proban2</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>environments module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/environments.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="environments-module">
+<h1>environments module<a class="headerlink" href="#environments-module" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-environments"></span><dl class="class">
+<dt id="environments.Two_Sensors">
+<em class="property">class </em><code class="sig-prename descclassname">environments.</code><code class="sig-name descname">Two_Sensors</code><span class="sig-paren">(</span><em class="sig-param">mu=0.1</em>, <em class="sig-param">m=2.5</em>, <em class="sig-param">g=9.8</em>, <em class="sig-param">v=1</em>, <em class="sig-param">max_reward=1</em><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class contains the environment for the experiment II.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mu</strong> (<em>float</em><em>, </em><em>optional</em>) – Friction coefficient between the box and the floor.
+, defaults to 0.1</p></li>
+<li><p><strong>m</strong> (<em>float</em><em>, </em><em>optional</em>) – Mass of the bullet in Kg, defaults to 2.5</p></li>
+<li><p><strong>g</strong> (<em>float</em><em>, </em><em>optional</em>) – Acceleration of gravity in m/s^2, defaults to 9.8</p></li>
+<li><p><strong>v</strong> (<em>int</em><em>, </em><em>optional</em>) – Velocity of the bullet in m/s, defaults to 1</p></li>
+<li><p><strong>max_reward</strong> (<em>int</em><em>, </em><em>optional</em>) – Maximum allowed reward for the agent, defaults to 1</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="environments.Two_Sensors.get_measurements">
+<code class="sig-name descname">get_measurements</code><span class="sig-paren">(</span><em class="sig-param">action1</em>, <em class="sig-param">outcome1</em>, <em class="sig-param">action2</em>, <em class="sig-param">outcome_2</em>, <em class="sig-param">V</em><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.get_measurements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms the actions and the environmental elements into an array
+to feed the Analyzer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action1</strong> (<em>int</em>) – Action performed by the first experimenter.</p></li>
+<li><p><strong>outcome1</strong> (<em>float / int</em>) – Outcome of the first use of the sensors.</p></li>
+<li><p><strong>action2</strong> (<em>int</em>) – Action performed by the second experimenter.</p></li>
+<li><p><strong>outcome_2</strong> (<em>float / int</em>) – Outcome of the second use of the sensors.</p></li>
+<li><p><strong>V</strong> (<em>float</em>) – Velocity of the test bullet.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Numpy array containing all the arguments</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="environments.Two_Sensors.give_reward">
+<code class="sig-name descname">give_reward</code><span class="sig-paren">(</span><em class="sig-param">prediction</em>, <em class="sig-param">observed</em>, <em class="sig-param">sigma=0.05</em><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.give_reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates the reward based on a Gaussian function of the relative
+difference between the predicted and the observed value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prediction</strong> (<em>float</em>) – predicted value</p></li>
+<li><p><strong>observed</strong> (<em>float</em>) – real observed value</p></li>
+<li><p><strong>sigma</strong> (<em>float</em><em>, </em><em>optional</em>) – Width of the Gaussian. The smaller <cite>sigma</cite>, the higher the
+needed precision to get a reward, defaults to 0.05</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Obtained reward</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float / numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="environments.Two_Sensors.reshape_for_analyzer">
+<code class="sig-name descname">reshape_for_analyzer</code><span class="sig-paren">(</span><em class="sig-param">measurements</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.reshape_for_analyzer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reshapes the measurements and the target value in a suitable
+format for a Keras analyzer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>measurements</strong> (<em>numpy array</em>) – Measurements to give the Analyzer to make the
+prediction</p></li>
+<li><p><strong>target</strong> (<em>float</em>) – Target value to fit.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>X_train (inputs to the Analyzer), y_train (Target value to fit)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pandas DataFrame, pandas DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="environments.Two_Sensors.restart_mass">
+<code class="sig-name descname">restart_mass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.restart_mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restart the mass M of the box and rewrites the variables with the
+the new positions.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="environments.Two_Sensors.take_action">
+<code class="sig-name descname">take_action</code><span class="sig-paren">(</span><em class="sig-param">action</em><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.take_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given an action this function gives the corresponding outcome. The
+action 0 represents the low accuracy / wide range sensor. The actions
+(1,2,3,4) represts the high accuracy / narrow range sensor and it’s
+placement.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>action</strong> (<em>int</em>) – Action representing the choice of sensor</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Outcome of the sensor</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float / int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="environments.Two_Sensors.test_shooting">
+<code class="sig-name descname">test_shooting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#environments.Two_Sensors.test_shooting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Samples uniformly at random a velocity for the bullet from the range
+[v-0.5*v,v+0.5*v], where v is the velocity of the bullets in the initial
+shooting. Then it calculates the position of the box after being shot
+with the random velocity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>v_test (sampled velocity), d_test (corresponding distance)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>float, float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="rlagents.html" class="btn btn-neutral" title="rlagents module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright ajajajaj.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Stanford-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
