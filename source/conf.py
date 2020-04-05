@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 #
 import mock
+import os
+import sys
  
 MOCK_MODULES = ['numpy', 'np', 'tensorflow', 'tf','collections', 'deque', 
                'keras', 'keras.layers', 'keras.models,','Model', 'Input', 
@@ -9,8 +11,7 @@ MOCK_MODULES = ['numpy', 'np', 'tensorflow', 'tf','collections', 'deque',
 for mod_name in MOCK_MODULES:
     sys.modules[mod_name] = mock.Mock()
 
-import os
-import sys
+
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.abspath('../'))
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
