@@ -96,7 +96,7 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-import stanford_theme
-html_theme = "stanford_theme"
-html_theme_path = [stanford_theme.get_html_theme_path()]
-autoclass_content = "both"
+# import stanford_theme
+# html_theme = "stanford_theme"
+# html_theme_path = [stanford_theme.get_html_theme_path()]
+# autoclass_content = "both"
