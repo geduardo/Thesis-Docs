@@ -7,7 +7,7 @@ MOCK_MODULES = ['numpy', 'np', 'tensorflow', 'tf','collections', 'deque',
                'Dense', 'Model','Sequential','keras.optimizers','Adam',
                'keras.utils','to_categorical','layers','load_model']
 for mod_name in MOCK_MODULES:
-sys.modules[mod_name] = mock.Mock()
+    sys.modules[mod_name] = mock.Mock()
 
 import os
 import sys
