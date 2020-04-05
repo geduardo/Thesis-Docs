@@ -157,6 +157,7 @@ class DQN(object):
     def get_Q(self, state):
         """Calculate the Q-Values for all the actions using the trained Deep 
         Q-Network.
+        
         :param state: Input state for the agent.
         :type state: numpy array
         :return: A ordered table with the Q-Value of each action for the given
