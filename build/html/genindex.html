@@ -82,8 +82,7 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">INtroduccion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro.html#list">List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">The documentation for Designing Experiments with Neural Networks.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyzers.html">analyzers module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rlagents.html">rlagents module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="environments.html">environments module</a></li>
@@ -180,6 +179,8 @@
       <li><a href="analyzers.html#analyzers.Two_Layers_single_output.build_model">build_model() (analyzers.Two_Layers_single_output method)</a>
 
       <ul>
+        <li><a href="rlagents.html#rlagents.DoubleDQN.build_model">(rlagents.DoubleDQN method)</a>
+</li>
         <li><a href="rlagents.html#rlagents.DQN.build_model">(rlagents.DQN method)</a>
 </li>
       </ul></li>
@@ -188,6 +189,10 @@
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rlagents.html#rlagents.DoubleDQN">DoubleDQN (class in rlagents)</a>
+</li>
+  </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="rlagents.html#rlagents.DQN">DQN (class in rlagents)</a>
 </li>
@@ -205,8 +210,12 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlagents.html#rlagents.DQN.flat">flat() (rlagents.DQN method)</a>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.flat">flat() (rlagents.DoubleDQN method)</a>
+
+      <ul>
+        <li><a href="rlagents.html#rlagents.DQN.flat">(rlagents.DQN method)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -215,21 +224,29 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="environments.html#environments.Two_Sensors.get_measurements">get_measurements() (environments.Two_Sensors method)</a>
 </li>
-      <li><a href="rlagents.html#rlagents.DQN.get_next_action">get_next_action() (rlagents.DQN method)</a>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.get_next_action">get_next_action() (rlagents.DoubleDQN method)</a>
 
       <ul>
+        <li><a href="rlagents.html#rlagents.DQN.get_next_action">(rlagents.DQN method)</a>
+</li>
         <li><a href="rlagents.html#rlagents.Q_Learning.get_next_action">(rlagents.Q_Learning method)</a>
+</li>
+      </ul></li>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.get_Q">get_Q() (rlagents.DoubleDQN method)</a>
+
+      <ul>
+        <li><a href="rlagents.html#rlagents.DQN.get_Q">(rlagents.DQN method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlagents.html#rlagents.DQN.get_Q">get_Q() (rlagents.DQN method)</a>
-</li>
       <li><a href="environments.html#environments.Two_Sensors.give_reward">give_reward() (environments.Two_Sensors method)</a>
 </li>
-      <li><a href="rlagents.html#rlagents.DQN.greedy_action">greedy_action() (rlagents.DQN method)</a>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.greedy_action">greedy_action() (rlagents.DoubleDQN method)</a>
 
       <ul>
+        <li><a href="rlagents.html#rlagents.DQN.greedy_action">(rlagents.DQN method)</a>
+</li>
         <li><a href="rlagents.html#rlagents.Q_Learning.greedy_action">(rlagents.Q_Learning method)</a>
 </li>
       </ul></li>
@@ -263,14 +280,20 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="rlagents.html#rlagents.DQN.random_action">random_action() (rlagents.DQN method)</a>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.random_action">random_action() (rlagents.DoubleDQN method)</a>
 
       <ul>
+        <li><a href="rlagents.html#rlagents.DQN.random_action">(rlagents.DQN method)</a>
+</li>
         <li><a href="rlagents.html#rlagents.Q_Learning.random_action">(rlagents.Q_Learning method)</a>
 </li>
       </ul></li>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.remember">remember() (rlagents.DoubleDQN method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.replay">replay() (rlagents.DoubleDQN method)</a>
+</li>
       <li><a href="environments.html#environments.Two_Sensors.reshape_for_analyzer">reshape_for_analyzer() (environments.Two_Sensors method)</a>
 </li>
       <li><a href="environments.html#environments.Two_Sensors.restart_mass">restart_mass() (environments.Two_Sensors method)</a>
@@ -285,12 +308,18 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="environments.html#environments.Two_Sensors.take_action">take_action() (environments.Two_Sensors method)</a>
 </li>
+      <li><a href="rlagents.html#rlagents.DoubleDQN.target_train">target_train() (rlagents.DoubleDQN method)</a>
+</li>
       <li><a href="environments.html#environments.Two_Sensors.test_shooting">test_shooting() (environments.Two_Sensors method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="analyzers.html#analyzers.Two_Layers_single_output.train">train() (analyzers.Two_Layers_single_output method)</a>
+
+      <ul>
+        <li><a href="rlagents.html#rlagents.DoubleDQN.train">(rlagents.DoubleDQN method)</a>
 </li>
+      </ul></li>
       <li><a href="analyzers.html#analyzers.Two_Layers_single_output">Two_Layers_single_output (class in analyzers)</a>
 </li>
       <li><a href="environments.html#environments.Two_Sensors">Two_Sensors (class in environments)</a>

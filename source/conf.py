@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-#
-import mock
 import os
 import sys
  
